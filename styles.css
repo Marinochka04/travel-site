@@ -250,6 +250,7 @@ body {
 /* About Section */
 
 .about-section {
+    margin-top: -35px;
     padding: 60px 40px;
     text-align: center;
     background-color: #F9F5E8;
@@ -423,6 +424,7 @@ footer {
     }
 
     .tours-grid {
+        margin-top: 0;
         padding: 40px 20px;
         grid-template-columns: 1fr !important;
         width: 100% !important;
@@ -432,6 +434,10 @@ footer {
     .tours-grid.one-card,
     .tours-grid.two-cards {
        width: 100%;
+    }
+
+    .about-section {
+        margin-top: 0;
     }
 
     .about-cards {
