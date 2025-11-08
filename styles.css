@@ -83,16 +83,6 @@ body {
     margin-bottom: 30px;
 }
 
-.hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    background-color: #FFFEEC;
-}
-
 .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -129,6 +119,7 @@ body {
 /* Filter Section */
 
 .filter-section {
+    margin-top: 20px;
     padding: 60px 40px;
     text-align: center;
     position: relative;
@@ -178,6 +169,7 @@ body {
 /* Tours Grid */
 
 .tours-grid {
+    margin-top: -35px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
