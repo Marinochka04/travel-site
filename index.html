@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>TravelEase - Путешествия, которые запоминаются.</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">TravelEase</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#tours">Туры</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <h1>Путешествия, которые запоминаются</h1>
+                <p>Выбирайте маршрут - мы позаботимся о деталях.</p>
+                <a href="#tours" class="btn btn-primary">Посмотреть туры</a>
+            </section>
+
+            <!-- Filter Section -->
+            <section class="filter-section">
+                <h2>Выберите категорию</h2>
+                <div class="filter-buttons">
+                    <label><input type="radio" name="category" value="all" />Все</label>
+                    <label><input type="radio" name="category" value="mountains" />Горы</label>
+                    <label><input type="radio" name="category" value="sea" />Море</label>
+                    <label><input type="radio" name="category" value="forest" />Лес</label>
+                    <label><input type="radio" name="category" value="city" />Город</label>
+                </div>
+            </section>
+
+            <!-- Tours Grid -->
+            <section id="tours" class="tours-grid">
+                <!-- Mountains1 -->
+                <div class="tour-card" data-category="mountains">
+                    <img src="images/climbing-elbrus.jpg" alt="Восхождение на Эльбрус">
+                    <div class="tour-info">
+                        <!-- Hidden Checkbox -->
+                        <input type="checkbox" id="details-mountains1" class="details-checkbox">
+                        <h3>Восхождение на Эльбрус</h3>
+                        <p>Протяженность маршрута: 10 дней</p>
+                        <p>Сложность: Высокая</p>
+                        <p>Цена: от 45 000 ₽</p>
+                        <label for="details-mountains1" class="btn btn-secondary">Подробнее</label>
+
+                        <div class="expanded-content">
+                            <p><strong>Детальное описание маршрута:</strong> ...</p>
+                            <p><strong>Включено:</strong> Проживание, питание, трансфер, гид.</p>
+                            <p><strong>Не включено:</strong> Авиабилеты, страховка, личное снаряжение.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sea1 -->
+                <div class="tour-card" data-category="sea">
+                    <img src="images/maldives-holidays.jpg" alt="Отдых на Мальдивах">
+                    <div class="tour-info">
+                        <input type="checkbox" id="details-sea1" class="details-checkbox">
+                        <h3>Отдых на Мальдивах</h3>
+                        <p>Протяженность: 7 дней</p>
+                        <p>Сложность: Легкая</p>
+                        <p>Цена: от 85 000 ₽</p>
+                        <label for="details-sea1" class="btn btn-secondary">Подробнее</label>
+
+                        <div class="expanded-content">
+                            <p><strong>Детальное описание маршрута:</strong> ...</p>
+                            <p><strong>Включено:</strong> Проживание, питание, трансфер, гид.</p>
+                            <p><strong>Не включено:</strong> Авиабилеты, страховка, личное снаряжение.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forest -->
+                <div class="tour-card" data-category="forest">
+                    <img src="images/urals-hiking.jpg" alt="Поход по Уралу">
+                    <div class="tour-info">
+                        <input type="checkbox" id="details-forest" class="details-checkbox">
+                        <h3>Поход по Уралу</h3>
+                        <p>Протяженность: 5 дней</p>
+                        <p>Сложность: Средняя</p>
+                        <p>Цена: от 25 000 ₽</p>
+                        <label for="details-forest" class="btn btn-secondary">Подробнее</label>
+
+                        <div class="expanded-content">
+                            <p><strong>Детальное описание маршрута:</strong> ...</p>
+                            <p><strong>Включено:</strong> Проживание, питание, трансфер, гид.</p>
+                            <p><strong>Не включено:</strong> Авиабилеты, страховка, личное снаряжение.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- City -->
+                <div class="tour-card" data-category="city">
+                    <img src="images/paris-tour.webp" alt="Городской тур по Парижу">
+                    <div class="tour-info">
+                        <input type="checkbox" id="details-city" class="details-checkbox">
+                        <h3>Городской тур по Парижу</h3>
+                        <p>Протяженность: 4 дня</p>
+                        <p>Сложность: Легкая</p>
+                        <p>Цена: от 35 000 ₽</p>
+                        <label for="details-city" class="btn btn-secondary">Подробнее</label>
+
+                        <div class="expanded-content">
+                            <p><strong>Детальное описание маршрута:</strong> ...</p>
+                            <p><strong>Включено:</strong> Проживание, питание, трансфер, гид.</p>
+                            <p><strong>Не включено:</strong> Авиабилеты, страховка, личное снаряжение.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mountains2 -->
+                <div class="tour-card" data-category="mountains">
+                    <img src="images/altai-traveling.jpg" alt="Путешествие по Алтаю">
+                    <div class="tour-info">
+                        <input type="checkbox" id="details-mountains2" class="details-checkbox">
+                        <h3>Путешествие по Алтаю</h3>
+                        <p>Протяженность маршрута: 8 дней</p>
+                        <p>Сложность: Средняя</p>
+                        <p>Цена: от 38 000 ₽</p>
+                        <label for="details-mountains2" class="btn btn-secondary">Подробнее</label>
+
+                        <div class="expanded-content">
+                            <p><strong>Детальное описание маршрута:</strong> ...</p>
+                            <p><strong>Включено:</strong> Проживание, питание, трансфер, гид.</p>
+                            <p><strong>Не включено:</strong> Авиабилеты, страховка, личное снаряжение.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sea2 -->
+                <div class="tour-card" data-category="sea">
+                    <img src="images/bali-holidays.jpg" alt="Отдых на Бали">
+                    <div class="tour-info">
+                        <input type="checkbox" id="details-sea2" class="details-checkbox">
+                        <h3>Отдых на Бали</h3>
+                        <p>Протяженность: 10 дней</p>
+                        <p>Сложность: Легкая</p>
+                        <p>Цена: от 65 000 ₽</p>
+                        <label for="details-sea2" class="btn btn-secondary">Подробнее</label>
+
+                        <div class="expanded-content">
+                            <p><strong>Детальное описание маршрута:</strong> ...</p>
+                            <p><strong>Включено:</strong> Проживание, питание, трансфер, гид.</p>
+                            <p><strong>Не включено:</strong> Авиабилеты, страховка, личное снаряжение.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about-section">
+                <h2>Почему выбирают нас?</h2>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <h3>Личный подход</h3>
+                        <p>Каждый маршрут создается с учетом ваших пожеланий.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Безопасность</h3>
+                        <p>Все туры проходят под контролем опытных гидов.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Доступные цены</h3>
+                        <p>Мы напрямую с партнерами - без лишних наценок.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <h2>Свяжитесь с нами</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required />
+                    <input type="email" placeholder="Email" required />
+                    <textarea placeholder="Сообщение" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 TravelEase. Все права защищены.</p>
+        </footer>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = Array.from(document.querySelectorAll('.tour-card'));
+            const radios = Array.from(document.querySelectorAll('input[name="category"]'));
+            const toursGrid = document.querySelector('.tours-grid');
+
+            function applyFilter(selected) {
+                let visibleCount = 0;
+
+                cards.forEach(card => {
+                    if (selected === 'all' || card.dataset.category === selected) {
+                        card.style.display = '';
+                        card.classList.remove('fade-out');
+                        card.classList.remove('fade-in');
+                        requestAnimationFrame(() => card.classList.add('fade-in'));
+                        visibleCount++;
+                    } else {
+                        if (getComputedStyle(card).display === 'none') return;
+
+                        card.classList.remove('fade-in');
+                        card.classList.add('fade-out');
+
+                        card.addEventListener('animationend', () => {
+                            if (card.classList.contains('fade-out')) {
+                                card.style.display = 'none';
+                            }
+                        }, { once: true });
+                    }
+                });
+
+                // Удаляем все возможные классы-модификаторы
+                toursGrid.classList.remove('one-card', 'two-cards');
+
+                // Добавляем класс в зависимости от количества видимых карточек
+                if (visibleCount === 1) {
+                    toursGrid.classList.add('one-card');
+                } else if (visibleCount === 2) {
+                    toursGrid.classList.add('two-cards');
+                }
+                // Для 3 и более - классы не добавляются, используется основное правило CSS
+            }
+
+            radios.forEach(radio => {
+                radio.addEventListener('change', () => applyFilter(radio.value));
+            });
+
+            const checked = radios.find(r => r.checked);
+            if (checked) applyFilter(checked.value);
+            else {
+                const first = radios[0];
+                if (first) {
+                    first.checked = true;
+                    applyFilter(first.value);
+                }
+            }
+        });
+        </script>
+
+    </body>
+</html>
